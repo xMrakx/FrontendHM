@@ -21,8 +21,9 @@
 1. Создать свой репозиторий в GitHub и запушить туда содержимое этого репозитория
 2. Поднять новый проект на `Vite`, `React`, `TypeScript`. При установке назовите его `client`
 3. Заменить стандартные конфиги, созданные Vite при инициализации проекта, на конфиги из папки `config`.
-4. Добавить в проект пакеты: `eslint-config-prettier`, `sass`, `stylelint`, `stylelint-config-css-modules`, `stylelint-config-standard-scss`, `stylelint-order`, `stylelint-scss`, `stylelint-use-logical`.
-5. В `package.json` в scripts добавить команды:
+4. Добавить в проект пакеты: `sass`, `stylelint`, `stylelint-config-css-modules`, `stylelint-config-standard-scss`, `stylelint-order`, `stylelint-scss`, `stylelint-use-logical`.
+5. Добавить в проект ещё пакеты: `eslint-config-prettier`, `eslint`, `@eslint/js`, `typescript`, `typescript-eslint`, `globals`, `eslint-config-prettier`, `eslint-plugin-react-hooks`, `eslint-plugin-react-refresh`,`eslint-plugin-react`, `eslint-plugin-import`.
+6. В `package.json` в scripts добавить команды:
 
 ```json
 {
@@ -35,14 +36,14 @@
 }
 ```
 
-6. Разобраться что за пакеты и команды
-7. Сверстать экран конвертера валют [Макет](https://www.figma.com/design/S66rvu5vtQM7zBEbSxlqou/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80-%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%D1%8B?node-id=2035-339&t=Hs7MnRBOijiOUnra-1)
-8. Визуально разбить макет на компоненты:
+7. Разобраться что за пакеты и команды
+8. Сверстать экран конвертера валют [Макет](https://www.figma.com/design/S66rvu5vtQM7zBEbSxlqou/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80-%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%D1%8B?node-id=2035-339&t=Hs7MnRBOijiOUnra-1)
+9. Визуально разбить макет на компоненты:
    - выделить предполагаемые компоненты на макете или скриншоте разными цветами;
    - подписать название каждого компонента;
    - использовать это разбиение как основу для структуры React-компонентов.
    - положить полученное изображение рядом App.tsx
-9. Покрыть компонент `More about ...` тестами: проверить корректное отображение на странице и показывает нужный текст/описание для выбранной валютной пары. Дополнительные тесты на другие компоненты приветствуются.
+10. Покрыть компонент `More about ...` тестами: проверить корректное отображение на странице и показывает нужный текст/описание для выбранной валютной пары. Дополнительные тесты на другие компоненты приветствуются.
 
 ### Ограничения
 
