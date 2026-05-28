@@ -1,9 +1,2 @@
-# Проект: Currency Exchanger 
-![design](./design.jpg)
-![select](./more.jpg)
+<img width="876" height="463" alt="CurrencyExchanger" src="https://github.com/user-attachments/assets/629c2179-ffd7-4d3f-9a00-0057a3ec0dc2" />
 
-## Выбор валют: 
-Первый селект - валюта, которой пользователь хочет расплатиться
-Второй селект - валюта, которую пользователь хочет купить.
-
-При нажатии на кнопку “More about RUB/USD” снизу появляется краткое описание описание валют.
