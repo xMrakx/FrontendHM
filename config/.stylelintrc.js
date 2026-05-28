@@ -105,6 +105,13 @@ export default {
                 emptyLineBeforeUnspecified: 'always',
                 emptyLineMinimumPropertyThreshold: 5
             }
+        ],
+        'selector-class-pattern': [
+            '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+            {
+                resolveNestedSelectors: true,
+                message: 'Expected class selector to be kebab-case'
+            }
         ]
     }
 };
