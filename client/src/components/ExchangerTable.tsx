@@ -4,6 +4,8 @@ import MoreAboutWidget from "./MoreAboutWidget/MoreAboutWidget";
 import SelectExchangeTable from "./SelectEcxhangeTable/SelectExchangeTable";
 import styles from "./ExchangerTable.module.css";
 
+import { moreAboutWidgetMock } from "./MoreAboutWidget/MoreAboutWidgetMock";
+
 function ExchangerTable() {
     return (
         <div className={styles.container}>
@@ -11,7 +13,7 @@ function ExchangerTable() {
                 <CurrentExchangeTable />
                 <DateTimeString />
                 <SelectExchangeTable />
-                <MoreAboutWidget fromCode="PLN" toCode="JPY" />
+                <MoreAboutWidget {...moreAboutWidgetMock} />
             </div>
         </div>
     )

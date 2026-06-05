@@ -2,12 +2,18 @@ import { useState } from "react";
 import CurrencyDescriptionRow from "./CurrencyDescriptionRow";
 import styles from "./MoreAboutWidget.module.scss";
 
-interface MoreAboutWidgetProps {
+export interface MoreAboutWidgetProps {
     fromCode: string;
+    fromName: string;
+    fromSymbol: string;
+    fromDescription: string;
+    toName: string;
     toCode: string;
+    toSymbol: string;
+    toDescription: string;
 }
 
-function MoreAboutWidget({ fromCode, toCode }: MoreAboutWidgetProps) {
+function MoreAboutWidget({ fromCode, fromName, fromSymbol, fromDescription, toCode, toName, toSymbol, toDescription }: MoreAboutWidgetProps) {
     const [isVisible, setIsVisible] = useState(true);
 
     const ChangeVisibility = () => {
@@ -25,20 +31,16 @@ function MoreAboutWidget({ fromCode, toCode }: MoreAboutWidgetProps) {
             {isVisible && (
                 <div>
                     <CurrencyDescriptionRow
-                        name="Polish zloty"
-                        code="PLN"
-                        symbol="zł"
-                        description="This is the official currency and legal tender of Poland.
-                            It is subdivided into 100 groszy (gr). It is the most-traded currency
-                            in Central and Eastern Europe and ranks 20th most-traded in the foreign exchange market."
+                        name={fromName}
+                        code={fromCode}
+                        symbol={fromSymbol}
+                        description={fromDescription}
                     />
                     <CurrencyDescriptionRow
-                        name="Japanese yen"
-                        code="JPY"
-                        symbol="¥"
-                        description="The yen is the official currency of Japan. It is the third-most 
-                            traded currency in the foreign exchange market, after the United States dollar
-                            (USD) and the euro.[2] It is also widely used as a third reserve currency after the USD and the euro."
+                        name={toName}
+                        code={toCode}
+                        symbol={toSymbol}
+                        description={toDescription}
                     />
 
                 </div>
