@@ -1,19 +1,19 @@
 .container {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    grid-template-columns: 100vw;
-    grid-template-rows: 100vh;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh;
 }
 
 .table {
-    width: 1257px;
-    height: 662px;
-    background-color: white;
-    padding: 16px 28px;
-    grid-column: 0;
-    grid-row: 0;
-    border-radius: 30px;
+  width: 1257px;
+  height: 662px;
+  background-color: white;
+  padding: 16px 28px;
+  grid-column: 0;
+  grid-row: 0;
+  border-radius: 30px;
 }
