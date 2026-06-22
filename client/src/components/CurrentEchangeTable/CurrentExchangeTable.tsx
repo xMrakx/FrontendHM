@@ -1,10 +1,16 @@
 import styles from "./CurrentExchangeTable.module.scss";
 
-function CurrentExchangeTable() {
+interface CurrentExchangeTableProps {
+  fromName: string;
+  toName: string;
+  rate: number;
+}
+
+function CurrentExchangeTable({ fromName, toName, rate }: CurrentExchangeTableProps) {
   return (
     <div className={styles.container}>
-      <span className={styles.from}>1 Polish zloty is</span>
-      <span className={styles.to}>0.99 Japanese yen</span>
+      <span className={styles.from}>1 {fromName} is</span>
+      <span className={styles.to}>{rate} {toName}</span>
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 100vw;
+  place-content: center center;
+  place-items: center center;
+}
+
+.table {
+  grid-row: 0;
+  grid-column: 0;
+
+  inline-size: 1257px;
+  block-size: 662px;
+  padding: 16px 28px;
+
+  background-color: white;
+  border-radius: 30px;
+}
